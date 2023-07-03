@@ -1,13 +1,8 @@
-mod buble_sort;
+use crate::factorial::factorial;
 
-use crate::buble_sort::buble_sort;
+mod buble_sort;
+mod factorial;
 
 fn main() {
-    println!("Hello, world!");
-
-    let mut numbers = vec![4, 2, 5, 3, 1];
-
-    buble_sort(&mut numbers);
-
-    println!("Array ordenado: {:?}", numbers);
+    println!("8! is equals to {:?}.", factorial(8));
 }
